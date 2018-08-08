@@ -1,0 +1,46 @@
+:root{
+    --container-lg: 1230px;
+    --container-nm: 988px;
+}
+
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    &-lg{
+        max-width: var(--container-lg);
+    }
+    &-nm{
+        max-width: var(--container-nm);
+    }
+}
+
+.btn{
+    padding-top: 6px;
+    padding-bottom: 7px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 2px solid #667973;
+    transition: 0.5s;
+    font-size: 17px;
+    font-weight: 600;
+    text-shadow: 0px 1px rgba(12, 12, 12, 0.4);
+    text-transform: capitalize;
+    &--silver{
+        background-image: url('./assets/images/backgrounds/btn-silver-bg.jpg');
+        background-position: 20%;
+        color: #947445;
+        
+        &:hover{
+            background-position: 70%;
+            border: 2px solid #4e8876;
+        }
+    }
+}
+.golden-border-image{
+    border: 2px solid #947445;
+    max-width: 100%;
+    height: -webkit-fill-available;
+    object-fit: contain;
+    float: left;
+    margin-right: 30px;
+}

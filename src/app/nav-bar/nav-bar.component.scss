@@ -1,0 +1,12 @@
+.global-navbar{
+    border-bottom: 4px solid #947445;
+}
+
+.navbar{
+    &__main-logo-block{
+        width: 50px;
+        img{
+            width: 100%;
+        }
+    }
+}

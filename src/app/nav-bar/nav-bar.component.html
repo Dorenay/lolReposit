@@ -1,0 +1,24 @@
+<section class="global-navbar" style="background-image: url('./assets/images/backgrounds/navbar-bg.jpg')">
+  <div class="container container-lg">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="#">
+        <div class="navbar__main-logo-block">
+          <img src="./assets/images/picts/main-logo1.png" alt="">
+        </div>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item" *ngFor = 'let href of hrefs'>
+            <a class="nav-link" href={{href.link}}>
+              <span class="btn btn--span btn--silver">{{href.link}}</span>
+            </a>
+          </li>  
+        </ul>
+      </div>
+    </nav>
+  </div>
+</section>
