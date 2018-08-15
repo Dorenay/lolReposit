@@ -1,14 +1,22 @@
 <div class="news">
   <div class="news__header">
-    <h2>text</h2>
+    <a routerLink="{{novuna.id}}"><h2>{{novuna.header}}</h2></a>
   </div>
   <div class="news__body">
     <div class="news__body__image-block">
-      <img class="golden-border-image" src="./assets/images/news/akali-news.jpg" alt="">
+      <img class="news__image golden-border golden-border--slim" src="{{ novuna.imageUrl }}" alt="">
     </div>
     <div class="news__body__text-block">
-      <h4>Atention atention atenton</h4>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores iusto nemo reiciendis qui quisquam sed, maiores impedit dolores quas earum culpa iure libero voluptas facilis cupiditate officia accusamus magni! Ducimus?</p>
+      <h4></h4>
+      <p>{{novuna.text}}</p>
     </div>
+  </div>
+  <div class="news__footer">
+    <img src="./assets/images/picts/thumbs-up.png" alt="">
+    <span>{{novuna.likes}}</span>
+    <img src="./assets/images/picts/thumbs-down.png" alt="">
+    <span>{{novuna.dislikes}}</span>
+    <img src="./assets/images/picts/comment.png" alt="">
+    <span>{{novuna.coments}}</span>
   </div>
 </div>

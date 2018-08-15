@@ -1,0 +1,9 @@
+<div class="page-body" style="background-image: url('./assets/images/backgrounds/page-bg.png')">
+  <div class="container container-lg">
+    <ul class="row news-page__list">
+      <li class="col-lg-4" *ngFor= 'let item of NS'>
+        <app-news [novuna]='item'></app-news>
+      </li>
+    </ul>
+  </div>
+</div>

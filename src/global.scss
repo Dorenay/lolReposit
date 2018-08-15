@@ -1,6 +1,7 @@
 :root{
     --container-lg: 1230px;
     --container-nm: 988px;
+    --color-gold: #947445;
 }
 
 .container{
@@ -28,7 +29,7 @@
     &--silver{
         background-image: url('./assets/images/backgrounds/btn-silver-bg.jpg');
         background-position: 20%;
-        color: #947445;
+        color: var(--color-gold);
         
         &:hover{
             background-position: 70%;
@@ -36,11 +37,24 @@
         }
     }
 }
-.golden-border-image{
-    border: 2px solid #947445;
-    max-width: 100%;
-    height: -webkit-fill-available;
-    object-fit: contain;
-    float: left;
-    margin-right: 30px;
+.golden-border{
+    &--slim{
+        border: 2px solid var(--color-gold);
+    }
+}
+
+.page-body{
+    background-attachment: fixed;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    position: relative;
+    &::before{
+        content: '';
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(12, 12, 12, 0.8);
+        top: 0;
+    }
 }

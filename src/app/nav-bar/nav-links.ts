@@ -2,7 +2,7 @@ import { NavLink } from './nav-link';
 
 export const NAVLINKS: NavLink[] = [
     {link: 'home'},
-    {link: 'news'},
+    {link: 'news-page'},
     {link: 'guids'},
     {link: 'tournaments'},
     {link: 'teams'},
