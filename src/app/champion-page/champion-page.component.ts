@@ -12,9 +12,10 @@ import { newsItem } from '../database/news-item';
   styleUrls: ['./champion-page.component.scss']
 })
 export class ChampionPageComponent implements OnInit {
-  thisID = '';
+  thisID;
   constructor(private route: ActivatedRoute) {
-    this.route.params.subscribe(params => console.log(params))
+    this.route.params.subscribe(params => this.thisID = params)
+    console.log(this.thisID);
    }
 
   ngOnInit() {
